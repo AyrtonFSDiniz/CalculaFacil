@@ -1,0 +1,43 @@
+@page "/consumo-agua"
+
+<h2>💧 Calculadora de Consumo e Valor da Conta de Água</h2>
+<p>🌿 Reduzir o consumo de água é fundamental para preservar nossos recursos naturais e diminuir suas contas mensais. importante para o planeta e para seu bolso! Use nossa calculadora para estimar seu gasto e identificar oportunidades de economiaconsumo e custo aproximado com base na tarifa da Sabesp.</p>
+
+<div class="form-group">
+    <label for="pessoas">👨‍👩‍👧 Número de Pessoas na Casa:</label>
+    <input id="pessoas" type="number" @bind="Pessoas" placeholder="Ex.: 3" />
+</div>
+<div class="form-group">
+    <label for="consumo">📊 Consumo Médio Diário (litros/pessoa):</label>
+    <input id="consumo" type="number" @bind="ConsumoDiario" placeholder="Ex.: 150" />
+</div>
+<div class="form-group">
+    <label for="dias">🗓️ Número de Dias (padrão: 30):</label>
+    <input id="dias" type="number" @bind="Dias" placeholder="Ex.: 30" />
+</div>
+<div class="form-group">
+    <label for="tarifa">💰 Tarifa da Sabesp por m³ (R$):</label>
+    <input id="tarifa" type="number" @bind="Tarifa" placeholder="Ex.: 4.42" />
+</div>
+<div class="alinhar-botao">
+    <button class="btn" @onclick="Calcular">🧮 Calcular</button>
+</div>
+<p class="mt-3">💧 Consumo Total: <strong>@ConsumoTotal</strong> litros</p>
+<p>Obs.: O cálculo padrão considera 30 dias. Você pode ajustá-lo acima. 😊</p>💰 Valor Estimado: <strong>@ValorEstimado.ToString("C")</strong>
+<p>Obs.: A tarifa padrão da Sabesp está em R$ 4,42/m³ (residencial comum). 😊</p>
+
+@code {
+    private int Pessoas = 1;
+    private double ConsumoDiario = 150;
+    private int Dias = 30;
+    private double Tarifa = 4.42; // Tarifa padrão da Sabesp (2024)
+    private double ConsumoTotal;
+    private double ValorEstimado;
+
+    private void Calcular()
+    {
+        ConsumoTotal = Pessoas * ConsumoDiario * Dias;
+        double consumoEmM3 = ConsumoTotal / 1000;
+        ValorEstimado = consumoEmM3 * Tarifa;
+    }
+}
