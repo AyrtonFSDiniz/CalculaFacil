@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 # Exponha a porta do servidor
-EXPOSE 8080
+EXPOSE 80
 
 WORKDIR /src
 
