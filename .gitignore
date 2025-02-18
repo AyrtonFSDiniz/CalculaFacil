@@ -35,8 +35,7 @@ publish/
 wwwroot/
 
 # Docker files
-docker-compose.yml
-Dockerfile
+
 
 # Git folders for Asset Pipeline
 [Ll]ibrary/
