@@ -19,6 +19,21 @@ RUN dotnet publish CalculaFacil.csproj -c Release -o /app/publish
 
 # Etapa 2: Configuração do servidor
 FROM nginx:alpine AS final
+
+# Defina o diretório de trabalho do Nginx
 WORKDIR /usr/share/nginx/html
+
+# Copie os arquivos publicados do Blazor WebAssembly
 COPY --from=publish /app/publish/wwwroot .
+
+# Copie o arquivo de configuração do Nginx
 COPY ngix.conf /etc/nginx/nginx.conf
+
+# Defina permissões adequadas para os arquivos
+RUN chmod -R 755 /usr/share/nginx/html
+
+# Exponha a porta 80
+EXPOSE 80
+
+# Comando para iniciar o Nginx
+CMD ["nginx", "-g", "daemon off;"]
