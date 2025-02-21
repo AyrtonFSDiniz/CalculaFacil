@@ -31,8 +31,7 @@ obj/
 *.log
 
 # Output directories
-publish/
-wwwroot/
+
 
 # Docker files
 

@@ -1,0 +1,110 @@
+  
+h2 {
+    color: #0077b6;
+    margin-top: 20px;
+    }
+    
+input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    }
+    
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+button:hover {
+    background-color: #005f8b;
+    }
+    
+div {
+    margin-bottom: 15px;
+    }
+
+    /* Estilos para o layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    }
+.container {
+    padding: 20px;
+    }
+    
+    input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    }
+    
+    /* Estilo dos botões */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto;
+    }
+    
+button:hover {
+    background-color: #0056b3;
+    }
+    
+    /* Adicionando cor e espaçamento para as seções */
+.section {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+.container {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+.menu {
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        background-color: #282c34;
+        color: white;
+        justify-content: center;
+    }
+.menu a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+.menu a:hover {
+        background-color: #3d4149;
+    }
+
+.alinhar-botao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1vh; /* Ajusta a altura conforme necessário */
+    }
+    
