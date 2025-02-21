@@ -1,9 +1,6 @@
 # Etapa 1: Build da aplicação
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
-# Exponha a porta do servidor
-EXPOSE 80
-
 WORKDIR /src
 
 # Copie o arquivo .csproj e restaure as dependências
@@ -27,7 +24,7 @@ WORKDIR /usr/share/nginx/html
 COPY --from=publish /app/publish/wwwroot .
 
 # Copie o arquivo de configuração do Nginx
-COPY ngix.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Defina permissões adequadas para os arquivos
 RUN chmod -R 755 /usr/share/nginx/html
