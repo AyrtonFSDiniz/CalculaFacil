@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CalculaFacil",
   "resources": {
-    "hash": "sha256-YERWb74tLXbFgToaQlx1hCnYe5DDbbKE+VZb6NIFhzA=",
+    "hash": "sha256-YQXGG2Zwl8ZALBpoH8Yc1rLpdWMf199VgPWWUn1MJf0=",
     "jsModuleNative": {
       "dotnet.native.8.0.13.alq4dk68k2.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "CalculaFacil.wasm": "sha256-h6sSZX12ayKdydMBjpMGm6uMSK9K9NBirx1umo8GZwE="
+      "CalculaFacil.wasm": "sha256-R+eMO02JFqAKo9Gf647Yp+P5xD0xCNobiyIxIsG2umE="
     },
     "pdb": {
-      "CalculaFacil.pdb": "sha256-v5RADFNaWiWX8uQmSVaBBtZ09dmmBuJtp5AXBRfie1s="
+      "CalculaFacil.pdb": "sha256-1lEtiX8nIOptJX78H+myzP0+K8LBICHEMKk7f4WydyQ="
     }
   },
   "cacheBootResources": true,

@@ -29,7 +29,8 @@
 *.log
 
 # Output directories
-
+bin/
+obj/
 
 # Docker files
 

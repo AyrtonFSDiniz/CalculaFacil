@@ -19,18 +19,24 @@
     <label for="tarifa">💰 Tarifa da Sabesp por m³ (R$):</label>
     <input id="tarifa" type="number" @bind="Tarifa" placeholder="Ex.: 4.42" />
 </div>
+<div class="form-group">
+    <label for="tarifaMinima">💰 Tarifa mínima da Sabesp (R$):</label>
+    <input id="tarifaMinima" type="number" @bind="TarifaMinima" />
+</div>
 <div class="alinhar-botao">
-    <button class="btn" @onclick="Calcular">🧮 Calcular</button>
+    <button class="btn estiloBotao1" @onclick="Calcular">🧮 Calcular</button>
 </div>
 <p class="mt-3">💧 Consumo Total: <strong>@ConsumoTotal</strong> litros</p>
 <p>Obs.: O cálculo padrão considera 30 dias. Você pode ajustá-lo acima. 😊</p>💰 Valor Estimado: <strong>@ValorEstimado.ToString("C")</strong>
 <p>Obs.: A tarifa padrão da Sabesp está em R$ 4,42/m³ (residencial comum). 😊</p>
+<p>Obs.: Temos a tarifa mínima cobrada, que é de @(TarifaMinima.ToString("C")).</p>
 
 @code {
     private int Pessoas = 1;
     private double ConsumoDiario = 150;
     private int Dias = 30;
     private double Tarifa = 4.42; // Tarifa padrão da Sabesp (2024)
+    private double TarifaMinima = 50.00; // Tarifa mínima da Sabesp
     private double ConsumoTotal;
     private double ValorEstimado;
 
@@ -39,5 +45,10 @@
         ConsumoTotal = Pessoas * ConsumoDiario * Dias;
         double consumoEmM3 = ConsumoTotal / 1000;
         ValorEstimado = consumoEmM3 * Tarifa;
+        if (ValorEstimado < TarifaMinima)
+        {
+            ValorEstimado = TarifaMinima;
+        }
     }
+
 }
