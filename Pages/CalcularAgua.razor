@@ -1,5 +1,6 @@
 @page "/consumo-agua"
 
+<div class="container">
 <h2>💧 Calculadora de Consumo e Valor da Conta de Água</h2>
 <p>🌿 Reduzir o consumo de água é fundamental para preservar nossos recursos naturais e diminuir suas contas mensais. importante para o planeta e para seu bolso! Use nossa calculadora para estimar seu gasto e identificar oportunidades de economiaconsumo e custo aproximado com base na tarifa da Sabesp.</p>
 
@@ -30,6 +31,21 @@
 <p>Obs.: O cálculo padrão considera 30 dias. Você pode ajustá-lo acima. 😊</p>💰 Valor Estimado: <strong>@ValorEstimado.ToString("C")</strong>
 <p>Obs.: A tarifa padrão da Sabesp está em R$ 4,42/m³ (residencial comum). 😊</p>
 <p>Obs.: Temos a tarifa mínima cobrada, que é de @(TarifaMinima.ToString("C")).</p>
+</div>
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .ad-space {
+        background-color: #f8f9fa;
+        border: 1px dashed #6c757d;
+        padding: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+</style>
 
 @code {
     private int Pessoas = 1;

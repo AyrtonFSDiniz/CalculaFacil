@@ -3,6 +3,9 @@ build_property.EnableAotAnalyzer =
 build_property.EnableSingleFileAnalyzer = 
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -26,10 +29,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/Blog.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/CalcularAgua.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYXJBZ3VhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +39,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/PaginasBlog/Blog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnaW5hc0Jsb2dcQmxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/PaginasBlog/EconomizaAgua.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnaW5hc0Jsb2dcRWNvbm9taXphQWd1YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/PaginasBlog/SobreBlog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnaW5hc0Jsb2dcU29icmVCbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/SobreNos.razor]
