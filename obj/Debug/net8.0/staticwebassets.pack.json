@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\monitorar-uso-agua.png"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumoGas\\caixa-do-medidor-de-gás.jpg",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumoGas\\caixa-do-medidor-de-gás.jpg"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\Ar-condicionado.png",
       "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\Ar-condicionado.png"
     },

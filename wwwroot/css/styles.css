@@ -63,6 +63,8 @@ body {
 .container {
         padding: 20px;
         font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
     }
 .menu {
         display: flex;
@@ -128,4 +130,13 @@ body {
 .estiloBotao1:active {
   background-color: #0064bd;
   box-shadow: none;
+}
+
+.image-mobile {
+    width: 100px;
+}
+@media (min-width: 768px) {
+    .image-mobile {
+        width: 350px;
+    }
 }

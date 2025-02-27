@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vYhIUaclpdO9e/xmIqLkFn444EbltSPTNbjJuSgWJFA=",
+  "Hash": "1Oll1PNyryOVGq1HKW8WhHqyKALbUO/Yp9gKQAaeuoI=",
   "Source": "CalculaFacil",
   "BasePath": "/",
   "Mode": "Root",
@@ -8166,6 +8166,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\CalcularConsumeAgua\\monitorar-uso-agua.png"
+    },
+    {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumoGas\\caixa-do-medidor-de-gás.jpg",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/CalcularConsumoGas/caixa-do-medidor-de-gás.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\CalcularConsumoGas\\caixa-do-medidor-de-gás.jpg"
     },
     {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\Ar-condicionado.png",

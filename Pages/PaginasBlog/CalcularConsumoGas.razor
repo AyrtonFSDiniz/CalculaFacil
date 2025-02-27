@@ -1,0 +1,86 @@
+@page "/blog/calcular-consumo-gas"
+
+@using MudBlazor
+
+<MudContainer>
+    <MudCard>
+        <MudCardHeader>
+            <MudText Typo="Typo.h5" Class="mb-2">
+                Como Calcular o Consumo de Gás Doméstico
+            </MudText>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Um passo a passo para medir o uso de gás em sua residência e entender como controlar melhor esse
+                recurso.
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">Introdução</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                O gás doméstico é um recurso essencial para muitas residências, utilizado principalmente para cozinhar,
+                aquecer água e (nos lugares mais frios) aquecer ambientes. Compreender como calcular o consumo de gás em
+                sua residência pode ajudar a identificar oportunidades de economia, além de garantir o uso eficiente e
+                seguro desse recurso. Neste artigo, você encontrará um guia passo a passo para medir e controlar melhor
+                o consumo de gás em sua casa.
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">1. Conheça os Tipos de Gás Utilizados</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Existem dois principais tipos de gás utilizados em residências: Gás Liquefeito de Petróleo (GLP) e Gás
+                Natural (GN). É importante saber qual tipo de gás você utiliza, pois isso influenciará no cálculo do
+                consumo e nas tarifas cobradas.
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">2. Identifique os Equipamentos que Utilizam Gás</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Faça uma lista dos equipamentos em sua residência que utilizam gás, como fogão, forno, aquecedor
+                de água e lareira. Anote a potência de cada equipamento, geralmente expressa em quilowatts (kW)
+                ou megajoules (MJ).
+            </MudText>
+
+            <MudGrid Justify="Justify.Center" Class="mt-2">
+                <MudItem>
+                    <MudImage Src="images/CalcularConsumoGas/caixa-do-medidor-de-gás.jpg" Alt="Medidor de Gás"
+                        Class="image-mobile mx-auto" />
+                </MudItem>
+            </MudGrid>
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">3. Verifique as Leituras do Medidor de Gás</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Se você utiliza gás natural, há um medidor de gás em sua residência. Anote as leituras do
+                medidor no início e no final de um período específico (por exemplo, uma semana ou um mês).
+                Subtraia a leitura inicial da leitura final para obter o consumo total de gás no período.
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">4. Calcule o Consumo de Gás de Cada Equipamento</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Para calcular o consumo de gás de cada equipamento, multiplique a potência do equipamento pelo
+                tempo de uso. Use a fórmula:
+                <br><br>
+                Consumo de Gás (MJ) = Potência (MJ/h) × Tempo de Uso (h)
+                <br><br>
+                Por exemplo, se o seu fogão tem uma potência de 10 MJ/h e você o utiliza por 2 horas por dia, o
+                consumo diário será:
+                <br><br>
+                10 MJ/h × 2 h = 20 MJ
+                <br><br>
+                Multiplique pelo número de dias no período para obter o consumo total.
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">5. Converta para a Unidade de Medida da Fatura</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                As faturas de gás podem apresentar o consumo em unidades diferentes, como metros cúbicos (m³) ou
+                quilowatt-hora (kWh). Use a conversão apropriada para comparar com a leitura da sua fatura. Por
+                exemplo, para converter de MJ para kWh, use a relação:
+                <br><br>
+                1 kWh = 3.6 MJ
+            </MudText>
+
+            <MudText Typo="Typo.h6" Class="mt-4 mb-2">6. Monitore o Consumo Regularmente</MudText>
+            <MudText Typo="Typo.body1" Class="mb-2">
+                Faça anotações regulares do consumo de gás e compare com períodos anteriores. Isso ajudará a
+                identificar padrões de uso e a implementar medidas de economia, como a manutenção dos
+                equipamentos e a adoção de hábitos mais eficientes.
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</MudContainer>
