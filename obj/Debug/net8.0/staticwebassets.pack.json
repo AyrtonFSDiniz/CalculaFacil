@@ -37,6 +37,102 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumeAgua\\alto-consumo.png",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\alto-consumo.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumeAgua\\consumo-pessoa.png",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\consumo-pessoa.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumeAgua\\ferramentas-monitoramento.png",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\ferramentas-monitoramento.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumeAgua\\medidor-agua.png",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\medidor-agua.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\CalcularConsumeAgua\\monitorar-uso-agua.png",
+      "PackagePath": "staticwebassets\\images\\CalcularConsumeAgua\\monitorar-uso-agua.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\Ar-condicionado.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\Ar-condicionado.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\Desligar-aparelhos.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\Desligar-aparelhos.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\eletrodomesticos.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\eletrodomesticos.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\habitos-sustentaveis.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\habitos-sustentaveis.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\lampada-led.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\lampada-led.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\maquina-de-lavar.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\maquina-de-lavar.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\DicasReduzirContaLuz\\standby.png",
+      "PackagePath": "staticwebassets\\images\\DicasReduzirContaLuz\\standby.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomiaEnergia\\beneficios-economicos.png",
+      "PackagePath": "staticwebassets\\images\\EconomiaEnergia\\beneficios-economicos.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomiaEnergia\\dicas-reducao.png",
+      "PackagePath": "staticwebassets\\images\\EconomiaEnergia\\dicas-reducao.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomiaEnergia\\impacto-ambiental.png",
+      "PackagePath": "staticwebassets\\images\\EconomiaEnergia\\impacto-ambiental.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\chuva.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\chuva.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\chuveiro.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\chuveiro.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\educacao.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\educacao.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\escovar-dentes.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\escovar-dentes.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\maquina-lavar.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\maquina-lavar.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\privada.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\privada.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\redutor-vazao.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\redutor-vazao.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\regar-jardim.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\regar-jardim.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\EconomizarAgua\\vazamento.png",
+      "PackagePath": "staticwebassets\\images\\EconomizarAgua\\vazamento.png"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
