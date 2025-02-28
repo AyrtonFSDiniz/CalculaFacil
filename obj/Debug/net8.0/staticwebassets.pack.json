@@ -137,6 +137,22 @@
       "PackagePath": "staticwebassets\\images\\EconomizarAgua\\vazamento.png"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\ImpactosDesperdicios\\desperdicios.webp",
+      "PackagePath": "staticwebassets\\images\\ImpactosDesperdicios\\desperdicios.webp"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\RotinaSustentavel\\rotina-sustentavel.png",
+      "PackagePath": "staticwebassets\\images\\RotinaSustentavel\\rotina-sustentavel.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\Sustentabilidade\\paineis-solares.webp",
+      "PackagePath": "staticwebassets\\images\\Sustentabilidade\\paineis-solares.webp"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\TecnologiasModernas\\casa-inteligente.webp",
+      "PackagePath": "staticwebassets\\images\\TecnologiasModernas\\casa-inteligente.webp"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
