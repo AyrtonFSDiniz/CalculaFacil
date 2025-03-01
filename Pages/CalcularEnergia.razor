@@ -1,0 +1,78 @@
+@page "/consumo-energia"
+@using MudBlazor
+@using System.Globalization
+
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8917682611048948"
+     crossorigin="anonymous"></script>
+</head>
+
+
+<MudContainer>
+    <MudGrid Justify="Justify.Center">
+        <MudItem>
+            <MudText Typo="Typo.h4" Class="mb-3 mt-3">⚡ Calculadora de Consumo de Energia</MudText>
+        </MudItem>
+    </MudGrid>
+
+    <MudText Typo="Typo.body1">
+        🌍 Economizar energia elétrica é essencial para reduzir custos e minimizar impactos ambientais. Use nossa
+        calculadora para estimar seu gasto mensal de eletricidade.
+    </MudText>
+
+    <MudGrid Class="mt-4">
+        <MudItem xs="12" sm="6">
+            <MudNumericField @bind-Value="Potencia" Label="🔌 Potência do aparelho (W)" Variant="Variant.Outlined"
+                Step=".1M" Adornment="Adornment.Start" AdornmentIcon="fas fa-bolt" IconSize="Size.Small" T="decimal" />
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudNumericField @bind-Value="HorasUso" Label="⏳ Horas de uso por dia (máx. 24h)" Variant="Variant.Outlined"
+                Adornment="Adornment.Start" AdornmentIcon="fas fa-clock" IconSize="Size.Small" Min="1" Max="24" />
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudNumericField @bind-Value="DiasUso" Label="🗓️ Dias de uso por mês" Variant="Variant.Outlined"
+                Adornment="Adornment.Start" AdornmentIcon="fas fa-calendar-alt" IconSize="Size.Small" Min="1"
+                Max="31" />
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudNumericField @bind-Value="TarifaEnergia" Label="💰 Tarifa de energia (R$/kWh)"
+                Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="fas fa-money-bill-wave"
+                IconSize="Size.Small" Step=".01M" Format="N2" Culture="@_de" T="decimal" />
+        </MudItem>
+        <MudItem xs="12" Class="text-center mt-3">
+            <MudButton OnClick="Calcular" Variant="Variant.Filled" Color="Color.Primary" StartIcon="fas fa-calculator">
+                Calcular</MudButton>
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider Class="my-4" />
+
+    <MudAlert Severity="Severity.Info" Class="mt-3" Dense="true" ContentAlignment="HorizontalAlignment.Center">
+        <MudIcon Icon="fas fa-lightbulb" /> <strong>Consumo Total:</strong> @ConsumoTotal kWh/mês
+    </MudAlert>
+
+    <MudAlert Severity="Severity.Success" Class="mt-2" Dense="true" ContentAlignment="HorizontalAlignment.Center">
+        <MudIcon Icon="fas fa-dollar-sign" /> <strong>Valor Estimado:</strong> @ValorEstimado.ToString("C")
+    </MudAlert>
+</MudContainer>
+
+@code {
+
+    public CultureInfo _de = CultureInfo.GetCultureInfo("de-DE");
+
+    private decimal Potencia = 100; // Potência do aparelho em Watts
+    private int HorasUso = 5; // Horas de uso diário
+    private int DiasUso = 30; // Dias de uso por mês
+    private decimal TarifaEnergia = 0.80m; // Tarifa de energia elétrica (R$/kWh)
+    private decimal ConsumoTotal;
+    private decimal ValorEstimado;
+
+    private void Calcular()
+    {
+        // Conversão de Watts para Quilowatts
+        decimal consumoDiario = (Potencia / 1000) * HorasUso;
+        ConsumoTotal = Math.Round(consumoDiario * DiasUso, 2); // kWh/mês
+        ValorEstimado = ConsumoTotal * TarifaEnergia; // Custo total
+    }
+}
