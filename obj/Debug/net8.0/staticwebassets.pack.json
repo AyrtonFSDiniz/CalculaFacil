@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\CalculaFacil.styles.css"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\ads.txt",
+      "PackagePath": "staticwebassets\\ads.txt"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\f.txt",
+      "PackagePath": "staticwebassets\\f.txt"
     },
     {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\favicon.png",

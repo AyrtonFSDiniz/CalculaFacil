@@ -1,0 +1,22 @@
+@inject AdService AdService
+
+<h3>Bloco de Anúncios</h3>
+
+<!-- Bloco de anúncio -->
+<div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8917682611048948"
+         data-ad-slot="SEU_AD_SLOT"></ins>
+</div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await AdService.LoadAdsAsync();
+        }
+    }
+}

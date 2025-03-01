@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ihnBbx3MnAwLOFPauFmTxQzs3Lqhx4GEMusDqy9hKO8=",
+  "Hash": "4qPqudOIg7oUSgAG/IuocoEEIA+5WMwh46DzfLpAg5Y=",
   "Source": "CalculaFacil",
   "BasePath": "/",
   "Mode": "Root",
@@ -7959,6 +7959,25 @@
       "OriginalItemSpec": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CalculaFacil.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\ads.txt",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "ads.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ads.txt"
+    },
+    {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\css\\app.css",
       "SourceId": "CalculaFacil",
       "SourceType": "Discovered",
@@ -8033,6 +8052,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\f.txt",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "f.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\f.txt"
     },
     {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\favicon.png",
