@@ -1045,3 +1045,8 @@ C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\webci
 C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\compressed\w3ub3ogdka.gz
 C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\compressed\8h00b23xc2.gz
 C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\compressed\b5vd8qtb8r.gz
+C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\bin\Debug\net8.0\wwwroot\_framework\Blazored.LocalStorage.wasm
+C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\bin\Debug\net8.0\wwwroot\_framework\Blazored.LocalStorage.wasm.gz
+C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\bin\Debug\net8.0\Blazored.LocalStorage.dll
+C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\webcil\Blazored.LocalStorage.wasm
+C:\Users\Silva Diniz\Desktop\Empreendimentos\CalculaFacil\obj\Debug\net8.0\compressed\yjm7bvg5te.gz

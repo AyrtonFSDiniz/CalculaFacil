@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@using CalculaFacil.Components.Cookies
 
 <MudThemeProvider />
 <MudPopoverProvider />
@@ -17,6 +18,8 @@
         @Body
     </MudMainContent>
 </MudLayout>
+
+<ComponenteAvisoCookies />
 
 @code {
     bool _drawerOpen = true;

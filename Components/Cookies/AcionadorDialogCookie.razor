@@ -1,0 +1,31 @@
+@inject IDialogService _dialogService
+@inject Blazored.LocalStorage.ILocalStorageService _localStorage
+
+<MudDialog>
+    <DialogContent>
+        <MudGrid Justify="Justify.Center">
+            <MudItem>
+                <MudText Typo="Typo.h6">🍪 Aviso de Cookies</MudText>
+            </MudItem>
+        </MudGrid>
+
+        <MudText Typo="Typo.body1">
+            Usamos cookies para melhorar sua experiência no site. Ao continuar navegando, você concorda com nossa
+            <MudLink Href="/privacidade">Política de Privacidade</MudLink>.
+        </MudText>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="FecharDialogo" Color="Color.Primary">Entendi</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; } = null!;
+    private async Task FecharDialogo()
+    {
+        await _localStorage.SetItemAsync<bool>("aceitarCookies", true);
+
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+}

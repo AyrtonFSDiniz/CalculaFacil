@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4qPqudOIg7oUSgAG/IuocoEEIA+5WMwh46DzfLpAg5Y=",
+  "Hash": "pJtmZC1oay5uVjOTOws+MZG1ifXo1PwbyVeopfu1GO0=",
   "Source": "CalculaFacil",
   "BasePath": "/",
   "Mode": "Root",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Silva Diniz\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.8\\build\\net8.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\obj\\Debug\\net8.0\\webcil\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\_framework\\CalculaFacil.pdb",
@@ -7826,6 +7845,25 @@
       "OriginalItemSpec": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.SecureString.wasm"
     },
     {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\obj\\Debug\\net8.0\\compressed\\yjm7bvg5te.gz",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
+    },
+    {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\obj\\Debug\\net8.0\\compressed\\z0b1nfxyck.gz",
       "SourceId": "CalculaFacil",
       "SourceType": "Computed",
@@ -8054,25 +8092,6 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\f.txt",
-      "SourceId": "CalculaFacil",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "f.txt",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\f.txt"
-    },
-    {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\favicon.png",
       "SourceId": "CalculaFacil",
       "SourceType": "Discovered",
@@ -8090,6 +8109,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\google62c044e1b8a29c1e.html",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "google62c044e1b8a29c1e.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\google62c044e1b8a29c1e.html"
     },
     {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\icon-192.png",

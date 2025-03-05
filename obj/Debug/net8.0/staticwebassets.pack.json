@@ -33,12 +33,12 @@
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\f.txt",
-      "PackagePath": "staticwebassets\\f.txt"
-    },
-    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\google62c044e1b8a29c1e.html",
+      "PackagePath": "staticwebassets\\google62c044e1b8a29c1e.html"
     },
     {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\icon-192.png",

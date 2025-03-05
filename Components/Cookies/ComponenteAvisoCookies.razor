@@ -1,0 +1,21 @@
+@inject IJSRuntime JS
+@inject IDialogService _dialogService
+@inject Blazored.LocalStorage.ILocalStorageService _localStorage
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        bool? mostrarAviso = await _localStorage.GetItemAsync<bool?>("aceitarCookies");
+        if (!mostrarAviso.HasValue || mostrarAviso is null)
+        {
+            AbrirDialogo();
+        }
+    }
+
+    private void AbrirDialogo()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = false, BackdropClick = true };
+        _dialogService.ShowAsync<AcionadorDialogCookie>(string.Empty, options);
+    }
+}

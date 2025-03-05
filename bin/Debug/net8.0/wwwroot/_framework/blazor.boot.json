@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CalculaFacil",
   "resources": {
-    "hash": "sha256-xBjNMQa+1hfROttRnKxf/lr68s8ETm1UnpHFdjNi0mg=",
+    "hash": "sha256-KEOpdhQ0FjSbxOqyatCADmmyF7v0Efhgc/OD3vDWkAs=",
     "jsModuleNative": {
       "dotnet.native.8.0.13.alq4dk68k2.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -17,6 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-H1yH7iBNYt/rilvQT6qsv2frcFFOBUKBnRrGQ1AIHnI=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-kPAmhH4D4UN/DyWkGyB1Sxs7tQyVDV150swtUfTSJJ8=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-ZB9Iu49s5SYUpy+xnFe+KIg2LeHGglqjWkohvxQ8m30=",
@@ -211,10 +212,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "CalculaFacil.wasm": "sha256-nqktuF0PAsgpyfoE3NFC7uAj2QdmKA02djaJSOI7qBI="
+      "CalculaFacil.wasm": "sha256-IqCHNKt9a9A46Co7C3gqEUTzA3Aiz0mGk95HcQ8+SZc="
     },
     "pdb": {
-      "CalculaFacil.pdb": "sha256-9K02fYS6YMdaiDXoCx6yZABk/UTaahtXL9B86eB/84I="
+      "CalculaFacil.pdb": "sha256-Q6DjBXMqOKn4dNUe6dcFbcED2FDK9767HhlXCJJ2YGU="
     }
   },
   "cacheBootResources": true,

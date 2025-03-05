@@ -12,6 +12,9 @@
     <MudNavLink Href="/faq">
         ❓ FAQ
     </MudNavLink>
+    <MudNavLink Href="/privacidade">
+        🔒 Política de Privacidade
+    </MudNavLink>
     <MudNavGroup Title="📝 Blog" @bind-Expanded="_expanded">
         <MudNavLink Match="NavLinkMatch.All" Href="/blog">Blog Principal</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/economize-agua">Economize Água</MudNavLink>
@@ -27,6 +30,8 @@
         <!-- Adicione mais links para postagens de blog aqui -->
     </MudNavGroup>
 </MudNavMenu>
+
+
 
 @code {
     private bool _expanded;
