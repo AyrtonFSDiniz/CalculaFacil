@@ -1,0 +1,83 @@
+@page "/custo-viagem"
+
+@using MudBlazor
+
+<MudContainer>
+    <MudPaper Class="pa-4">
+        <MudGrid Justify="Justify.Center">
+            <MudItem>
+                <MudText Typo="Typo.h4" Class=" mt-3 mb-3">🚗 Cálculo de Custo de Viagem</MudText>
+            </MudItem>
+        </MudGrid>
+
+        <MudText Typo="Typo.body1">
+            Estime o gasto total da sua viagem, considerando combustível, pedágios e outros gastos.
+        </MudText>
+
+        <MudGrid Spacing="3">
+            <MudItem xs="12" sm="6">
+                <CampoNumerico Icon="@Icons.Material.Filled.Route" Label="Distância (km)" 
+                Step=".1M" T="decimal" @bind-Value="Distancia" />
+            </MudItem>
+            <MudItem xs="12" sm="6">
+                <CampoNumerico Icon="@Icons.Material.Filled.LocalGasStation" 
+                Label="Consumo do carro (km/l)"
+                Step=".1M" T="decimal" @bind-Value="ConsumoCarro" />
+            </MudItem>
+            <MudItem xs="12" sm="6">
+                <CampoNumerico Icon="@Icons.Material.Filled.AttachMoney" 
+                Label="Preço do combustível (R$/litro)"
+                Step=".1M" T="decimal" @bind-Value="PrecoCombustivel" />
+            </MudItem>
+            <MudItem xs="12" sm="6">
+                <CampoNumerico Icon="@Icons.Material.Filled.LocalAtm" 
+                Label="Custo total com pedágios (R$)"
+                Step=".1M" T="decimal" @bind-Value="Pedagio" />
+            </MudItem>
+            <MudItem xs="12" sm="6">
+                <CampoNumerico Icon="@Icons.Material.Filled.Fastfood" 
+                Label="Gastos diversos (alimentação, lanches, etc.)"
+                Step=".1M" T="decimal" @bind-Value="GastosVariados" />
+            </MudItem>
+            <MudItem xs="12" sm="12" lg="12" Class="text-center mt-3">
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" 
+                OnClick="Calcular">
+                🧮 Calcular
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+
+        <MudAlert Severity="Severity.Info" Class="mt-4" Variant="Variant.Outlined" Dense="true" 
+            ContentAlignment="HorizontalAlignment.Center">
+            <MudGrid Justify="Justify.Center">
+                <MudItem>
+                    <MudText Align="Align.Center" Typo="Typo.body1">
+                        💰 Custo total estimado: <strong>@CustoViagem.ToString("C")</strong>
+                    </MudText>
+                </MudItem>
+            </MudGrid>
+        </MudAlert>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private decimal Distancia = 0;
+    private decimal ConsumoCarro = 0;
+    private decimal PrecoCombustivel = 0;
+    private decimal Pedagio = 0;
+    private decimal GastosVariados = 0;
+    private decimal CustoViagem = 0;
+
+    private void Calcular()
+    {
+        if (Distancia > 0 && ConsumoCarro > 0 && PrecoCombustivel > 0)
+        {
+            decimal litrosNecessarios = Distancia / ConsumoCarro;
+            decimal CustoCombustivel = litrosNecessarios * PrecoCombustivel;
+            CustoViagem = CustoCombustivel + Pedagio + GastosVariados;
+        }else{
+            _snackbar.Add($@"Necessário informar um valor maior que zero para Distância, 
+                          Consumo de Combustível e Preço de Combustível", Severity.Warning);
+        }
+    }
+}

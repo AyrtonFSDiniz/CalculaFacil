@@ -161,6 +161,14 @@
       "PackagePath": "staticwebassets\\images\\TecnologiasModernas\\casa-inteligente.webp"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\logo_calcula_facil.ico",
+      "PackagePath": "staticwebassets\\images\\logo_calcula_facil.ico"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\images\\logo_calcula_facil.png",
+      "PackagePath": "staticwebassets\\images\\logo_calcula_facil.png"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

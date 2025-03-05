@@ -6,23 +6,23 @@
 
 <div class="form-group">
     <label for="pessoas">👨‍👩‍👧 Número de Pessoas na Casa:</label>
-    <input id="pessoas" type="number" @bind="Pessoas" placeholder="Ex.: 3" />
+    <input id="pessoas" type="number" @bind="Pessoas" placeholder="Ex.: 3" min="1"/>
 </div>
 <div class="form-group">
     <label for="consumo">📊 Consumo Médio Diário (litros/pessoa):</label>
-    <input id="consumo" type="number" @bind="ConsumoDiario" placeholder="Ex.: 150" />
+    <input id="consumo" type="number" @bind="ConsumoDiario" placeholder="Ex.: 150" min="1"/>
 </div>
 <div class="form-group">
     <label for="dias">🗓️ Número de Dias (padrão: 30):</label>
-    <input id="dias" type="number" min="1" max="31" @bind="Dias" placeholder="Ex.: 30" />
+    <input id="dias" type="number" min="1" max="31" @bind="Dias" placeholder="Ex.: 30"/>
 </div>
 <div class="form-group">
     <label for="tarifa">💰 Tarifa da Sabesp por m³ (R$):</label>
-    <input id="tarifa" type="number" @bind="Tarifa" placeholder="Ex.: 4.42" />
+    <input id="tarifa" type="number" @bind="Tarifa" placeholder="Ex.: 4.42" min="0.01"/>
 </div>
 <div class="form-group">
     <label for="tarifaMinima">💰 Tarifa mínima da Sabesp (R$):</label>
-    <input id="tarifaMinima" type="number" step="0.01" @bind="TarifaMinima" />
+    <input id="tarifaMinima" type="number" step="0.01" @bind="TarifaMinima" min="0.01"/>
 </div>
 <div class="alinhar-botao">
     <button class="btn estiloBotao1" @onclick="Calcular">🧮 Calcular</button>

@@ -16,20 +16,20 @@
 
     <MudGrid Class="mt-4">
         <MudItem xs="12" sm="6">
-            <MudNumericField @bind-Value="Potencia" Label="🔌 Potência do aparelho (W)" Variant="Variant.Outlined"
+            <MudNumericField @bind-Value="Potencia" Label="Potência do aparelho (W)" Variant="Variant.Outlined"
                 Step=".1M" Adornment="Adornment.Start" AdornmentIcon="fas fa-bolt" IconSize="Size.Small" T="decimal" />
         </MudItem>
         <MudItem xs="12" sm="6">
-            <MudNumericField @bind-Value="HorasUso" Label="⏳ Horas de uso por dia (máx. 24h)" Variant="Variant.Outlined"
+            <MudNumericField @bind-Value="HorasUso" Label="Horas de uso por dia (máx. 24h)" Variant="Variant.Outlined"
                 Adornment="Adornment.Start" AdornmentIcon="fas fa-clock" IconSize="Size.Small" Min="1" Max="24" />
         </MudItem>
         <MudItem xs="12" sm="6">
-            <MudNumericField @bind-Value="DiasUso" Label="🗓️ Dias de uso por mês" Variant="Variant.Outlined"
+            <MudNumericField @bind-Value="DiasUso" Label="Dias de uso por mês" Variant="Variant.Outlined"
                 Adornment="Adornment.Start" AdornmentIcon="fas fa-calendar-alt" IconSize="Size.Small" Min="1"
                 Max="31" />
         </MudItem>
         <MudItem xs="12" sm="6">
-            <MudNumericField @bind-Value="TarifaEnergia" Label="💰 Tarifa de energia (R$/kWh)"
+            <MudNumericField @bind-Value="TarifaEnergia" Label="Tarifa de energia (R$/kWh)"
                 Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="fas fa-money-bill-wave"
                 IconSize="Size.Small" Step=".01M" Format="N2" Culture="@_de" T="decimal" />
         </MudItem>

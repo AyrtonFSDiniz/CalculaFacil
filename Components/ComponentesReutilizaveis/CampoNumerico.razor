@@ -1,0 +1,19 @@
+@typeparam T
+
+<MudNumericField T="T"
+                 Value="@Value"
+                 ValueChanged="ValueChanged"
+                 Label="@Label"
+                 Variant="Variant.Outlined"
+                 Step="@Step"
+                 Adornment="Adornment.Start"
+                 AdornmentIcon="@Icon"
+                 IconSize="Size.Small" />
+
+@code {
+    [Parameter] public T Value { get; set; } = default(T)!;
+    [Parameter] public EventCallback<T> ValueChanged { get; set; }
+    [Parameter] public string Label { get; set; } = string.Empty;
+    [Parameter] public string Icon { get; set; } = "fas fa-check"; // Ícone padrão
+    [Parameter] public T Step { get; set; } = default!;
+}
