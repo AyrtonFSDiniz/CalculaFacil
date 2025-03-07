@@ -40,10 +40,10 @@
                 Step=".1M" T="decimal" @bind-Value="GastosVariados" />
             </MudItem>
             <MudItem xs="12" sm="12" lg="12" Class="text-center mt-3">
-                <MudButton Variant="Variant.Filled" Color="Color.Primary" 
-                OnClick="Calcular">
-                🧮 Calcular
-                </MudButton>
+                    <BotaoReutilizavel OnClick="Calcular" StartIcon="fas fa-calculator" 
+                        Variant="Variant.Filled" Color="Color.Primary" >
+                        Calcular
+                    </BotaoReutilizavel>
             </MudItem>
         </MudGrid>
 

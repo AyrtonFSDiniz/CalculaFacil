@@ -8,16 +8,20 @@
 
     <!-- Descrição -->
     <MudText Typo="Typo.body1" Class="mb-4">
-        Tem alguma dúvida, sugestão ou precisa de ajuda? Preencha o formulário abaixo ou utilize um dos nossos canais de contato. Responderemos o mais rápido possível!
+        Tem alguma dúvida, sugestão ou precisa de ajuda? Preencha o formulário abaixo ou utilize um dos nossos canais de
+        contato. Responderemos o mais rápido possível!
     </MudText>
 
     <!-- Formulário de Contato -->
     <MudForm @ref="form" Class="mb-4">
         <MudTextField Label="Seu Nome" @bind-Value="Nome" Required="true" RequiredError="Por favor, insira seu nome." />
-        <MudTextField Label="Seu E-mail" @bind-Value="Email" Required="true" RequiredError="Por favor, insira um e-mail válido." />
-        <MudTextField Label="Assunto" @bind-Value="Assunto" Required="true" RequiredError="Por favor, insira um assunto." />
-        <MudTextField Label="Mensagem" @bind-Value="Mensagem" Lines="5" Variant="Variant.Outlined" Required="true" RequiredError="Por favor, insira sua mensagem." />
-        
+        <MudTextField Label="Seu E-mail" @bind-Value="Email" Required="true"
+            RequiredError="Por favor, insira um e-mail válido." />
+        <MudTextField Label="Assunto" @bind-Value="Assunto" Required="true"
+            RequiredError="Por favor, insira um assunto." />
+        <MudTextField Label="Mensagem" @bind-Value="Mensagem" Lines="5" Variant="Variant.Outlined" Required="true"
+            RequiredError="Por favor, insira sua mensagem." />
+
         <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="mt-4" OnClick="EnviarMensagem">
             Enviar Mensagem
         </MudButton>
@@ -27,16 +31,10 @@
     <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">Outros Canais de Contato</MudText>
     <MudList T="string">
         <MudListItem>
-            <MudIcon Icon="@Icons.Material.Filled.Email" Color="Color.Primary" Class="mr-2" />
-            <MudText Typo="Typo.body1">E-mail: contato@seusite.com</MudText>
-        </MudListItem>
-        <MudListItem>
-            <MudIcon Icon="@Icons.Material.Filled.Phone" Color="Color.Primary" Class="mr-2" />
-            <MudText Typo="Typo.body1">Telefone: (11) 1234-5678</MudText>
-        </MudListItem>
-        <MudListItem>
-            <MudIcon Icon="@Icons.Material.Filled.LocationOn" Color="Color.Primary" Class="mr-2" />
-            <MudText Typo="Typo.body1">Endereço: Rua Exemplo, 123 - São Paulo, SP</MudText>
+            <MudText Typo="Typo.body1">
+                <MudLink Href="mailto:suportecalculafacil@gmail.com">📩 suportecalculafacil@gmail.com
+                </MudLink>
+            </MudText>
         </MudListItem>
     </MudList>
 </MudContainer>
