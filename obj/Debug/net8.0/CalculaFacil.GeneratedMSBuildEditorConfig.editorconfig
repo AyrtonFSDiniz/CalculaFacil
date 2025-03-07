@@ -29,8 +29,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Components/ComponentesReutilizaveis/BotaoVoltarBlog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRlc1JldXRpbGl6YXZlaXNcQm90YW9Wb2x0YXJCbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Components/ComponentesReutilizaveis/CampoNumerico.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRlc1JldXRpbGl6YXZlaXNcQ2FtcG9OdW1lcmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Components/ComponentesReutilizaveis/Social.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRlc1JldXRpbGl6YXZlaXNcU29jaWFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Components/Cookies/AcionadorDialogCookie.razor]
@@ -55,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/CalculoCustoViagem.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3Vsb0N1c3RvVmlhZ2VtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/Contato.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0by5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Silva Diniz/Desktop/Empreendimentos/CalculaFacil/Pages/Faq.razor]

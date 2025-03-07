@@ -1,7 +1,7 @@
 ﻿
 <MudNavMenu>
     <MudNavLink Href="/" Match="NavLinkMatch.All">
-        <MudIcon Icon="@Icons.Material.Filled.Home" Size="Size.Small" /> Home
+        🏠 Home
     </MudNavLink>
     <MudNavLink Href="/consumo-agua">
         💧 Calcular Água
@@ -18,6 +18,12 @@
     <MudNavLink Href="/privacidade">
         🔒 Política de Privacidade
     </MudNavLink>
+    <MudNavLink Href="/sobre-nos" >
+        ℹ️ Sobre Nós
+    </MudNavLink>
+    <MudNavLink Href="/contato" >
+        📧 Contato
+    </MudNavLink>
     <MudNavGroup Title="📝 Blog" @bind-Expanded="_expanded">
         <MudNavLink Match="NavLinkMatch.All" Href="/blog">Blog Principal</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/economize-agua">Economize Água</MudNavLink>
@@ -32,6 +38,7 @@
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/rotina-sustentavel">Rotina Sustentável</MudNavLink>
         <!-- Adicione mais links para postagens de blog aqui -->
     </MudNavGroup>
+    <Social />
 </MudNavMenu>
 
 
