@@ -140,3 +140,25 @@ body {
         width: 350px;
     }
 }
+
+.resultados {
+    list-style: none;
+    padding: 0;
+}
+
+.resultados li {
+    margin: 8px 0;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resultados li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #499ffa;
+}
+
+.resultados li p {
+    font-size: 14px;
+    color: #a0a0a0;
+}

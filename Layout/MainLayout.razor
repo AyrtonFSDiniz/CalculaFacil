@@ -1,5 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @using CalculaFacil.Components.Cookies
+@using CalculaFacil.Components.ComponentesReutilizaveis
 
 <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>
 
@@ -10,7 +11,7 @@
 <MudLayout>
     <MudAppBar>
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        Calcula Fácil
+        <MudLink Href="/" Class="mt-1"><MudText Style="color: white">Calcula Fácil</MudText></MudLink>
         <MudSpacer />
         <MudSwitch @bind-Value="_isDarkMode" Color="Color.Primary" Class="mt-2" T="bool" Label="Modo Dark"/>
     </MudAppBar>

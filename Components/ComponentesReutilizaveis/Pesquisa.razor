@@ -1,0 +1,35 @@
+<MudTextField @bind-Value="termoBusca" Label="@Label" Variant="Variant.Outlined" 
+              Adornment="Adornment.Start" AdornmentIcon="Icons.Material.Filled.Search" 
+              AdornmentColor="Color.Info" AutoFocus="true" Immediate="true"/>
+
+@if (Resultados.Any())
+{
+    <ul class="resultados">
+        <h4 style="mb-2">👇 <strong>Esses são os resultados encontrados</strong> 👇</h4>
+        @foreach (var pagina in Resultados)
+        {
+            <li>
+                <a href="@pagina.Link">@pagina.Titulo</a>
+                <p>@pagina.Conteudo</p>
+            </li>
+        }
+    </ul>
+}
+else if (!string.IsNullOrWhiteSpace(termoBusca))
+{
+    <p>Nenhum resultado encontrado.</p>
+}
+
+@code {
+    [Parameter] public List<Pagina> Dados { get; set; } = new();
+    [Parameter] public string Label { get; set; } = "🔍 Pesquisar...";
+
+    private string termoBusca = "";
+
+    private List<Pagina> Resultados => string.IsNullOrWhiteSpace(termoBusca)
+        ? new List<Pagina>()
+        : Dados.Where(p => 
+            p.Titulo.Contains(termoBusca, StringComparison.OrdinalIgnoreCase) || 
+            p.Conteudo.Contains(termoBusca, StringComparison.OrdinalIgnoreCase))
+        .ToList();
+}

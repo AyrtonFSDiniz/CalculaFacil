@@ -81,3 +81,14 @@
         overflow-y: auto;
     }
 }
+
+@media (max-width: 640px) {
+    .collapse[b-yy4ufm4axi] {
+        /* Ocultar menu lateral em telas pequenas por padrão */
+        display: none;
+    }
+
+    .navbar-toggler[b-yy4ufm4axi] {
+        display: block; /* Mostrar o botão "hambúrguer" para abrir/fechar o menu */
+    }
+}

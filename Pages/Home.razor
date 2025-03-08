@@ -1,5 +1,7 @@
 ﻿@page "/"
 
+@using MudBlazor
+
 <PageTitle>Calcula Fácil</PageTitle>
 
 <body>
@@ -8,6 +10,11 @@
         <img src="images/logo_calcula_facil.png" alt="Logo Calcula Fácil" class="img-fluid" style="max-width: 200px;" />
         <h1>Bem-vindo ao Calcula Fácil!</h1>
         <p class="lead">Seu site para facilitar os cálculos do dia a dia.</p>
+
+        <!-- Campo de Pesquisa -->
+        <div class="search-container">
+            <Pesquisa Dados="paginas" Label="🔍 Precisa de algo? Pesquise aqui!" />
+        </div>
     </div>
 
     <div class="row justify-content-center">
@@ -31,7 +38,7 @@
         <div class="col-md-4">
             <div class="ad-space">
                 <!-- Espaço para propagandas -->
-                <p>🔍 Espaço reservado para propaganda interessante! 🔍</p>
+                <p>Espaço reservado para propaganda interessante!</p>
             </div>
         </div>
     </div>
@@ -52,4 +59,19 @@
         color:#232629;
         font-style: italic;
     }
+    .search-container {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
 </style>
+
+@code {
+    #region Pesquisa
+    private List<Pagina> paginas = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        paginas = await IndiceManager.ObterIndiceAsync();
+    }
+    #endregion
+}
