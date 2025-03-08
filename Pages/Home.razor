@@ -1,6 +1,7 @@
 ﻿@page "/"
 
 @using MudBlazor
+@inject NavigationManager _navigation
 
 <PageTitle>Calcula Fácil</PageTitle>
 
@@ -73,5 +74,7 @@
     {
         paginas = await IndiceManager.ObterIndiceAsync();
     }
+
+    
     #endregion
 }

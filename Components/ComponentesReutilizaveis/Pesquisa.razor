@@ -1,6 +1,9 @@
-<MudTextField @bind-Value="termoBusca" Label="@Label" Variant="Variant.Outlined" 
-              Adornment="Adornment.Start" AdornmentIcon="Icons.Material.Filled.Search" 
-              AdornmentColor="Color.Info" AutoFocus="true" Immediate="true"/>
+@inject NavigationManager _navigation
+
+<MudTextField Value="@termoBusca" ValueChanged="@OnSearchChanged" Label="@Label" 
+              Variant="Variant.Outlined" Adornment="Adornment.Start" 
+              AdornmentIcon="Icons.Material.Filled.Search" 
+              AdornmentColor="Color.Info" AutoFocus="true" Immediate="true" />
 
 @if (Resultados.Any())
 {
@@ -26,10 +29,37 @@ else if (!string.IsNullOrWhiteSpace(termoBusca))
 
     private string termoBusca = "";
 
+    protected override void OnInitialized()
+    {
+        var uri = new Uri(_navigation.Uri);
+        var queryParams = System.Web.HttpUtility.ParseQueryString(uri.Query);
+        termoBusca = queryParams["q"] ?? "";
+    }
+
     private List<Pagina> Resultados => string.IsNullOrWhiteSpace(termoBusca)
         ? new List<Pagina>()
         : Dados.Where(p => 
             p.Titulo.Contains(termoBusca, StringComparison.OrdinalIgnoreCase) || 
             p.Conteudo.Contains(termoBusca, StringComparison.OrdinalIgnoreCase))
         .ToList();
+
+    private EventCallback<string> OnSearchChanged => EventCallback.Factory.Create<string>(this, (novoTermo) =>
+    {
+        if (termoBusca != novoTermo)
+        {
+            termoBusca = novoTermo;
+            AtualizarUrlComTermo(termoBusca);
+        }
+    });
+
+    private void AtualizarUrlComTermo(string termo)
+    {
+        // Obtém apenas a rota base, sem os parâmetros da query
+        var uriBase = new Uri(_navigation.Uri).GetLeftPart(UriPartial.Path);
+
+        // Define a nova URL, adicionando o termo de busca apenas se não estiver vazio
+        var novaUrl = string.IsNullOrWhiteSpace(termo) ? uriBase : $"{uriBase}?q={Uri.EscapeDataString(termo)}";
+
+        _navigation.NavigateTo(novaUrl, forceLoad: false);
+    }
 }
