@@ -13,7 +13,7 @@
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudLink Href="/" Class="mt-1"><MudText Style="color: white">Calcula Fácil</MudText></MudLink>
         <MudSpacer />
-        <MudSwitch @bind-Value="_isDarkMode" Color="Color.Primary" Class="mt-2" T="bool" Label="Modo Dark"/>
+        <MudSwitch @bind-Value="_isDarkMode" Color="Color.Primary" Class="mt-4" T="bool" Label="Modo Dark"/>
     </MudAppBar>
     <MudDrawer @bind-Open="@_drawerOpen">
         <NavMenu/>

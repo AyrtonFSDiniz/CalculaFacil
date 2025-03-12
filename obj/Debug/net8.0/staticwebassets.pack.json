@@ -165,8 +165,16 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\js\\downloadArquivo.js",
+      "PackagePath": "staticwebassets\\js\\downloadArquivo.js"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\sitemap.xml",
       "PackagePath": "staticwebassets\\sitemap.xml"
+    },
+    {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\staticwebapp.config.json",
+      "PackagePath": "staticwebassets\\staticwebapp.config.json"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CalculaFacil.Microsoft.AspNetCore.StaticWebAssets.props",

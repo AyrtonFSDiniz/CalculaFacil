@@ -1,0 +1,260 @@
+@page "/simulador-financiamento"
+
+@using MudBlazor
+@using OfficeOpenXml
+
+@inject IJSRuntime _js
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="my-8">
+    <!-- Título da Página -->
+    <h1 class="mb-4" style="text-align: center;"> Calculadora de Juros de Financiamento</h1>
+
+    <!-- Introdução -->
+    <MudText Typo="Typo.body1" Class="mb-4">
+        Entenda o que são juros e financiamento, e utilize nossa calculadora para simular o valor total a ser pago em um
+        financiamento.
+    </MudText>
+
+    <!-- O que são Juros? -->
+    <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">O que são Juros?</MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        Juros são o custo do dinheiro emprestado. Quando você faz um financiamento, o banco ou instituição financeira
+        cobra juros sobre o valor emprestado. Existem dois tipos principais de juros:
+    </MudText>
+    <MudList T="string">
+        <MudListItem>
+            <MudText Typo="Typo.body1">
+                <MudIcon Icon="@Icons.Material.Filled.CheckCircle" Color="Color.Success" Class="mr-2" /><strong>Juros
+                    Simples</strong>: Calculados apenas sobre o valor inicial.
+            </MudText>
+        </MudListItem>
+        <MudListItem>
+            <MudText Typo="Typo.body1">
+                <MudIcon Icon="@Icons.Material.Filled.CheckCircle" Color="Color.Success" Class="mr-2" /><strong>Juros
+                    Compostos</strong>: Calculados sobre o valor inicial + juros acumulados.
+            </MudText>
+        </MudListItem>
+    </MudList>
+
+    <!-- O que é Financiamento? -->
+    <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">O que é Financiamento?</MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        Financiamento é um empréstimo feito para a aquisição de bens ou serviços, como imóveis, veículos ou educação. O
+        valor é pago em parcelas, que incluem o valor principal + juros.
+    </MudText>
+
+    <!-- Calculadora de Juros de Financiamento -->
+    <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">Calculadora de Juros de Financiamento</MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        Insira os dados abaixo para simular o valor total a ser pago em um financiamento:
+    </MudText>
+
+    <MudForm>
+        <!-- Valor do Financiamento -->
+        <MudNumericField @bind-Value="ValorFinanciamento" Label="Valor do Financiamento (R$)" Variant="Variant.Outlined"
+            Class="mb-4" />
+
+        <!-- Taxa de Juros Mensal -->
+        <MudNumericField @bind-Value="TaxaJurosMensal" Label="Taxa de Juros Mensal (%)" Variant="Variant.Outlined"
+            Class="mb-4" />
+
+        <!-- Prazo do Financiamento (Meses) -->
+        <MudNumericField @bind-Value="PrazoMeses" Label="Prazo do Financiamento (Meses)" Variant="Variant.Outlined"
+            Class="mb-4" />
+
+        <!-- Tipo de Juros -->
+        <MudSelect @bind-Value="_selecaoTipoJuros" Label="Tipo de Juros" Variant="Variant.Outlined" Class="mb-4">
+            <MudSelectItem Value="TipoJuros.JurosSimples.Id">Juros Simples</MudSelectItem>
+            <MudSelectItem Value="TipoJuros.JurosCompostos.Id">Juros Compostos</MudSelectItem>
+        </MudSelect>
+
+        <!-- Botão para Calcular -->
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="CalcularJuros" Class="mb-4">
+            Calcular
+        </MudButton>
+    </MudForm>
+
+    <!-- Resultado -->
+    @if (ValorTotal.HasValue)
+    {
+        <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">Resultado</MudText>
+        <MudText Typo="Typo.body1" Class="mb-4">
+            O valor total a ser pago no financiamento é: <strong>R$ @ValorTotal.Value.ToString("N2")</strong>.
+        </MudText>
+
+        <!-- Tabela de Amortização -->
+        <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">Tabela de Amortização</MudText>
+        <MudTable Items="@TabelaAmortizacao" Hover="true" Class="mb-4">
+            <HeaderContent>
+                <MudTh>
+                    Simulação Mensal
+                    <MudButton Variant="Variant.Outlined" Color="Color.Info" StartIcon="@Icons.Material.Filled.Download"
+                        OnClick="GerarExcelTabela" Class="ml-2">
+                        Baixar Excel®
+                    </MudButton>
+                </MudTh>
+                <MudTh>Mês</MudTh>
+                <MudTh>Parcela</MudTh>
+                <MudTh>Juros</MudTh>
+                <MudTh>Amortização</MudTh>
+                <MudTh>Saldo Devedor</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Mês">@context.Mes</MudTd>
+                <MudTd DataLabel="Parcela">R$ @context.Parcela.ToString("N2")</MudTd>
+                <MudTd DataLabel="Juros">R$ @context.Juros.ToString("N2")</MudTd>
+                <MudTd DataLabel="Amortização">R$ @context.ValorAmortizacao.ToString("N2")</MudTd>
+                <MudTd DataLabel="Saldo Devedor">R$ @context.SaldoDevedor.ToString("N2")</MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+
+    <!-- Explicação do Cálculo -->
+    <MudText Typo="Typo.h5" Class="mt-6 mb-2" GutterBottom="true">Como é Calculado?</MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        O cálculo do valor total de um financiamento com juros compostos é feito usando a fórmula:
+    </MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        <strong>Valor Total = Valor Financiado × (1 + Taxa de Juros) ^ Prazo</strong>
+    </MudText>
+    <MudText Typo="Typo.body1" Class="mb-4">
+        Onde:
+        <ul>
+            <li><strong>Valor Financiado</strong>: O valor inicial do empréstimo.</li>
+            <li><strong>Taxa de Juros</strong>: A taxa de juros mensal (em decimal).</li>
+            <li><strong>Prazo</strong>: O número de meses do financiamento.</li>
+        </ul>
+    </MudText>
+</MudContainer>
+
+@code {
+    private IJSObjectReference? _modulo;
+    private decimal? ValorFinanciamento;
+    private decimal? TaxaJurosMensal;
+    private int? PrazoMeses;
+    private decimal? ValorTotal;
+    private List<Amortizacao> TabelaAmortizacao = new List<Amortizacao>();
+    private int _selecaoTipoJuros = TipoJuros.JurosCompostos.Id;
+    private class TipoJuros : Enumeration
+    {
+        public static TipoJuros JurosSimples = new(1, "Juros Simples");
+        public static TipoJuros JurosCompostos = new(2, "Juros Compostos");
+
+        public TipoJuros(int id, string name) : base(id, name) { }
+    }
+
+    public class Amortizacao
+    {
+        public int Mes { get; set; }
+        public decimal Parcela { get; set; }
+        public decimal Juros { get; set; }
+        public decimal ValorAmortizacao { get; set; }
+        public decimal SaldoDevedor { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _modulo = await _js.InvokeAsync<IJSObjectReference>("import", "./js/downloadArquivo.js");
+    }
+
+    private void CalcularJuros()
+    {
+        if (ValorFinanciamento.HasValue && TaxaJurosMensal.HasValue && PrazoMeses.HasValue)
+        {
+            decimal taxaDecimal = TaxaJurosMensal.Value / 100;
+            if (_selecaoTipoJuros == TipoJuros.JurosCompostos.Id)
+            {
+                ValorTotal = ValorFinanciamento.Value * (decimal)Math.Pow(1 + (double)taxaDecimal, PrazoMeses.Value);
+                GerarTabelaAmortizacaoCompostos();
+            }
+            else
+            {
+                ValorTotal = ValorFinanciamento.Value * (1 + taxaDecimal * PrazoMeses.Value);
+                GerarTabelaAmortizacaoSimples();
+            }
+        }
+        else
+        {
+            ValorTotal = null;
+            TabelaAmortizacao.Clear();
+        }
+    }
+
+    private void GerarTabelaAmortizacaoCompostos()
+    {
+        TabelaAmortizacao.Clear();
+        decimal saldoDevedor = ValorFinanciamento!.Value;
+        decimal taxaDecimal = TaxaJurosMensal!.Value / 100;
+
+        for (int mes = 1; mes <= PrazoMeses!.Value; mes++)
+        {
+            decimal juros = saldoDevedor * taxaDecimal;
+            decimal amortizacao = (ValorTotal!.Value - juros) / PrazoMeses.Value;
+            decimal parcela = juros + amortizacao;
+            saldoDevedor -= amortizacao;
+
+            TabelaAmortizacao.Add(new Amortizacao
+            {
+                Mes = mes,
+                Parcela = parcela,
+                Juros = juros,
+                ValorAmortizacao = amortizacao,
+                SaldoDevedor = saldoDevedor
+            });
+        }
+    }
+
+    private void GerarTabelaAmortizacaoSimples()
+    {
+        TabelaAmortizacao.Clear();
+        decimal saldoDevedor = ValorFinanciamento!.Value;
+        decimal taxaDecimal = TaxaJurosMensal!.Value / 100;
+        decimal amortizacao = ValorFinanciamento.Value / PrazoMeses!.Value;
+
+        for (int mes = 1; mes <= PrazoMeses.Value; mes++)
+        {
+            decimal juros = ValorFinanciamento.Value * taxaDecimal;
+            decimal parcela = juros + amortizacao;
+            saldoDevedor -= amortizacao;
+
+            TabelaAmortizacao.Add(new Amortizacao
+            {
+                Mes = mes,
+                Parcela = parcela,
+                Juros = juros,
+                ValorAmortizacao = amortizacao,
+                SaldoDevedor = saldoDevedor
+            });
+        }
+    }
+
+    private async Task GerarExcelTabela()
+    {
+        string nomeArquivo = $"SimulacaoFinanciamento-{DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}.xlsx";
+
+        try
+        {
+            Excel gerarExcel = new Excel();
+            MemoryStream? excel = gerarExcel.GerarExcel<Amortizacao>(TabelaAmortizacao);
+
+            if (excel is not null)
+            {
+                using var streamRef = new DotNetStreamReference(stream: excel);
+                await _modulo!.InvokeVoidAsync("downloadArquivo", nomeArquivo, streamRef);
+
+                await excel.DisposeAsync();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+
+    }
+
+
+
+
+
+
+}

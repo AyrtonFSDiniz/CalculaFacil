@@ -1,5 +1,4 @@
-﻿
-<MudNavMenu>
+﻿<MudNavMenu>
     <MudNavLink Href="/" Match="NavLinkMatch.All">
         🏠 Home
     </MudNavLink>
@@ -12,6 +11,12 @@
     <MudNavLink Href="/custo-viagem">
         🚗 Custo de Viagem
     </MudNavLink>
+    <MudNavLink Href="/simulador-financiamento">
+        💰 Simulador de Financiamento
+    </MudNavLink>
+     <MudNavGroup Title="Automotivo" @bind-Expanded="_expanded">
+        <MudNavLink Match="NavLinkMatch.All" Href="/automotivo/"> Em construcao</MudNavLink>
+    </MudNavGroup>
     <MudNavLink Href="/faq">
         ❓ FAQ
     </MudNavLink>
@@ -21,10 +26,10 @@
     <MudNavLink Href="/termos-de-uso">
         📜 Termos de Uso
     </MudNavLink>
-    <MudNavLink Href="/sobre-nos" >
+    <MudNavLink Href="/sobre-nos">
         ℹ️ Sobre Nós
     </MudNavLink>
-    <MudNavLink Href="/contato" >
+    <MudNavLink Href="/contato">
         📧 Contato
     </MudNavLink>
     <MudNavGroup Title="📝 Blog" @bind-Expanded="_expanded">
@@ -32,11 +37,13 @@
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/economize-agua">Economize Água</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/calcular-consumo-agua">Calcular Consumo de Água</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/economia-energia">Economia de Energia</MudNavLink>
-        <MudNavLink Match="NavLinkMatch.All" Href="/blog/dicas-reduzir-conta-luz">Dicas para Reduzir <br> a Conta de Luz</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" Href="/blog/dicas-reduzir-conta-luz">Dicas para Reduzir <br> a Conta de Luz
+        </MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/guia-economizar-gas">Guia para Economizar Gás</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/calcular-consumo-gas">Calcular Consumo de Gás</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/sustentabilidade">Sustentabilidade</MudNavLink>
-        <MudNavLink Match="NavLinkMatch.All" Href="/blog/tecnologias-economizar-energia-agua">Tecnologias para Economizar Energia e Água</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" Href="/blog/tecnologias-economizar-energia-agua">Tecnologias para
+            Economizar Energia e Água</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/impactos-desperdicios">Impactos dos Desperdícios</MudNavLink>
         <MudNavLink Match="NavLinkMatch.All" Href="/blog/rotina-sustentavel">Rotina Sustentável</MudNavLink>
         <!-- Adicione mais links para postagens de blog aqui -->

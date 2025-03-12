@@ -54,10 +54,8 @@ else if (!string.IsNullOrWhiteSpace(termoBusca))
 
     private void AtualizarUrlComTermo(string termo)
     {
-        // Obtém apenas a rota base, sem os parâmetros da query
         var uriBase = new Uri(_navigation.Uri).GetLeftPart(UriPartial.Path);
 
-        // Define a nova URL, adicionando o termo de busca apenas se não estiver vazio
         var novaUrl = string.IsNullOrWhiteSpace(termo) ? uriBase : $"{uriBase}?q={Uri.EscapeDataString(termo)}";
 
         _navigation.NavigateTo(novaUrl, forceLoad: false);

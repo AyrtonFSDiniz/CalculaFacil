@@ -1,0 +1,94 @@
+{
+    "routes": [
+      {
+        "route": "/",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/consumo-agua",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/consumo-energia",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/faq",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/privacidade",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/sobre-nos",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/contato",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/economize-agua",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/calcular-consumo-agua",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/economia-energia",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/dicas-reduzir-conta-luz",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/guia-economizar-gas",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/calcular-consumo-gas",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/sustentabilidade",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/tecnologias-economizar-energia-agua",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/impactos-desperdicios",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/blog/rotina-sustentavel",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/termos-de-uso",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/simulador-financiamento",
+        "rewrite": "/index.html"
+      },
+      {
+        "route": "/custo-viagem",
+        "rewrite": "/index.html"
+      }
+    ],
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/404.html"
+      }
+    }
+  }
+  

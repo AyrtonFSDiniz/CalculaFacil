@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[4.5.0, )"
             },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.6.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.8, )"
