@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\CalculaFacil.styles.css"
     },
     {
+      "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\BingSiteAuth.xml",
+      "PackagePath": "staticwebassets\\BingSiteAuth.xml"
+    },
+    {
       "Id": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\ads.txt",
       "PackagePath": "staticwebassets\\ads.txt"
     },

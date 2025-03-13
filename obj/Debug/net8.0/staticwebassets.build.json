@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CZJtEf6ZavkEbu3dPNwh3yuDySxV9Y6XpEUZZg0k/Tc=",
+  "Hash": "FJEKIMCi05igLR4vwGiLx/55t8eBqHuLbBq+ahR75mo=",
   "Source": "CalculaFacil",
   "BasePath": "/",
   "Mode": "Root",
@@ -8280,6 +8280,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ads.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\BingSiteAuth.xml",
+      "SourceId": "CalculaFacil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "BingSiteAuth.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BingSiteAuth.xml"
     },
     {
       "Identity": "C:\\Users\\Silva Diniz\\Desktop\\Empreendimentos\\CalculaFacil\\wwwroot\\css\\app.css",
