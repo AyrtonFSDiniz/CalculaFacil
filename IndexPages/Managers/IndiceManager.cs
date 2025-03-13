@@ -18,7 +18,8 @@ public static class IndiceManager
         new Pagina { Titulo = "Cálculo de Custo de Viagem", Link = "/custo-viagem", Conteudo = "Estime o gasto total da sua viagem, considerando combustível, pedágios e outros gastos."},
         new Pagina { Titulo = "FAQ - Calcula Fácil", Link = "/faq", Conteudo = "Perguntas e respostas sobre o site."},
         new Pagina { Titulo = "Política de Privacidade", Link = "/privacidade", Conteudo = "Bem-vindo à Política de Privacidade do <strong>Calcula Fácil. Valorizamos sua privacidade e queremos esclarecer como os dados são tratados ao utilizar nosso site."},
-        new Pagina { Titulo = "Termo de Uso", Link="/termos-de-uso", Conteudo="Página falando sobre os termos de uso geral do site."}
+        new Pagina { Titulo = "Termo de Uso", Link="/termos-de-uso", Conteudo="Página falando sobre os termos de uso geral do site."},
+        new Pagina { Titulo = "Calculadora de Juros de Financiamento", Link = "/simulador-financiamento", Conteudo = "Entenda o que são juros e financiamento, e utilize nossa calculadora para simular o valor total a ser pago em um financiamento."},
     };
 
     public static Task<List<Pagina>> ObterIndiceAsync()
